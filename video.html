@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 🔴 Youtube Clone ▶ </title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./video.css">
+    <link rel="shortcut icon" href="./assets/sk2.ico" type="image/x-icon"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600&family=Fraunces:opsz,wght@9..144,900&family=Hanken+Grotesk:wght@500;700;800&family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&family=Open+Sans&family=Outfit:wght@300;400;600&family=Red+Hat+Display&family=Work+Sans:ital,wght@0,400;0,600;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ! ----------------navbar------------------------------- -->
+
+
+
+
+    <nav class="nav-bar">
+        <div class="burger-menu">
+            <span class="material-symbols-outlined">menu</span>
+        </div>
+
+        <div class="YouTube-logo">
+            <div class="container">
+                <div class="logo">
+                  <div class="triangle">
+                  </div>
+                </div>
+                <div class="text">
+                  YouTube
+                </div>
+              </div>
+        </div>
+        <section class="search-bar">
+          <input type="text" id="search-data" class="nav-input" placeholder="Search">
+          <span id="search-logo" class="material-symbols-outlined">search</span>
+          <span id="mic-phone"  class="material-symbols-outlined">keyboard_voice</span>
+      </section>
+
+      <div class="mini-icon">
+        <span class="material-symbols-outlined">video_camera_front</span>
+        <span class="material-symbols-outlined">apps</span>
+        <span class="material-symbols-outlined">notifications</span>
+        <img src="./assets/Profile-pic.png" alt="Profile-pic"/>
+    </div>
+
+    </nav>
+
+    <!-- !-------------nav End------------------------------------------ -->
+
+    <main class="80percdiv">
+        <section class="left">
+            <ol style="border: 1px solid black;" class="myDiv iframevideo" id="video-container">
+            </ol>
+            
+            <div class="video_name" id="video_title_container">
+                <h3 id="video_title">GAADI KAALI Dance Cover | Neha Kakkar, Rohanpreet Singh | Mohit Jain's Dance
+                    Institute MJDi</h3>
+                <img src="./svgs/likeViewShare.svg" alt=""> 
+            </div>
+
+            <div class="channelnameSubscribe">
+                <span class="channelInfo" id="channelInfo">
+                    <img src="" class="channel-icon" alt="">
+                    <h5 class="channelName">silentCoder</h5>
+                    <p style="color:grey"></p>
+                </span>
+                <!-- <img src="./assets/Secondary.png" class="subscribe" alt=""> -->
+            </div>
+            <div id="description">
+                <p>
+
+
+                </p>
+            </div>
+            <hr class="border-line">
+
+            <div class="comments" id="comments">
+                <span>286 Comments</span>
+                <a><img src="images/menu.png" width="20px"> SORT BY</a>
+                <br>
+                <br>
+            </div>
+            <div class="public_comments">
+                <img src="./images/profileSK.jpg" class="profile-img" alt="">
+                <p>Add a public Comment</p>
+            </div>
+
+            <div class="other_comments" id="other_comments">
+                <!-- <img src="./images/profileSK.jpg" class="profile-img" alt="">
+                    <span class="break">Add a public channel-name</span>  -->
+                <!-- <p class="user_comment" id="user_comment">hello</p> -->
+
+            </div>
+            <!-- <br> -->
+
+        </section>
+
+
+        <section class="right">
+            <img class="relatedContent" src="./svgs/relatedcontent.svg" alt="">
+            <img class="relatedContent" src="./svgs/relatedcontent.svg" alt="">
+
+
+        </section>
+
+    </main>
+
+
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Anq07eqvUwc?autoplay=1" id="" frameborder="0" allowfullscreen></iframe> -->
+
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./video.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,285 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+*:focus{
+  outline:none;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    /* width: 1750px;
+    height: 56px; */
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left:0;
+    padding: 0 2.5vw;
+    background: #212121;
+    position: fixed;
+
+}
+.burger-menu{
+    width: 40px;
+    height: 30px;
+    margin:10px;
+    color: aliceblue;
+    cursor: pointer;
+}
+.youtube-logo{
+   display: flex; 
+}
+
+  @import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One&subset=latin-ext');
+.container{ 
+  display:flex;
+  margin-left: 15px;
+
+}
+.triangle{   
+  margin-top:0.6rem;
+  margin-left:1.2rem;
+  border-top: 0.3rem solid transparent;
+  border-left: 1.0rem  solid white;
+  border-bottom: 0.4rem solid transparent;
+}
+.logo{
+  height:2rem;
+  width:3rem;
+  background-color:#FF0000;
+  border-top-left-radius:25%;
+  border-top-right-radius:25%;
+  border-bottom-left-radius:25%;
+  border-bottom-right-radius:25%;
+}
+.text{
+  font-family: 'Pathway Gothic One', sans-serif;
+  padding-left:0.5rem;
+  font-size:1.7rem;
+  font-weight:600;
+  color: white;
+}
+
+
+
+
+.search-bar{
+    display:flex;
+    align-items: center;
+    
+}
+#search-data{
+    width: 70vh;
+    height: 40px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 350px;
+    padding-left: 10px;
+    border: none;
+    background: #121212;
+    color: aliceblue;
+}
+
+#search-logo{
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: #303030;
+    color: aliceblue;
+   cursor: pointer;
+}
+#mic-phone{
+    color: aliceblue;
+    background-color: #121212;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 40px;
+}
+.mini-icon{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap:30px;
+    margin-left: 130px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main {
+    width: 85%;
+    margin-inline: auto;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+  
+  .iframevideo {
+    border-radius: 15px;
+    width: 100%;
+  }
+  
+  .video_name {
+    padding: 10px;
+    padding-bottom: 0;
+    width: fit-content;
+  }
+  .video_name img {
+    width: 100%;
+  }
+  .border-line {
+    width: 110%;
+    border: none;
+    border-bottom: 1px solid rgb(86, 80, 80);
+    margin: 10px 0;
+  }
+  .channelInfo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .channelnameSubscribe {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10px;
+  }
+  .right {
+    width: 40%;
+    /* object-fit: ; */
+  }
+  
+  .relatedContent {
+    filter: invert(0);
+    padding-inline: 21px;
+    margin-top: -12%;
+  }
+  
+  #description {
+    /* text-align: justify; */
+    font-size: 12px;
+    padding: 20px;
+    font-weight: 400;
+  }
+  
+  .comments {
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin: 20px;
+    margin: 20px;
+  }
+  .comments span {
+    margin-right: 30px;
+    /* width: 80%; */
+  }
+  .public_comments p {
+    margin-inline: 30px;
+    margin-top: 10px;
+    border-bottom: 1px solid grey;
+    width: -webkit-fill-available;
+  }
+  
+  .public_comments,
+  .other_comments {
+    display: flex;
+    padding-bottom: 29px;
+  }
+  #other_comments {
+    display: inline-block;
+    justify-content: center;
+   
+  }
+  .other_comments span {
+    margin-inline: 30px;
+  }
+  
+  .other_comments p {
+    color: white;
+    font-weight: 200;
+    width: 80%;
+    margin-inline: auto;
+    padding: 10px;
+  }
+  .break {
+    flex-basis: 100%;
+  }
+  
+  @media (max-width: 1100px) {
+    main {
+      grid-template-columns: 100%;
+      margin-inline: auto;
+    }
+  
+    
+  }
+  @media (max-width: 600px) {
+    .iframevideo {
+      border-radius: 15px;
+      width: 100%;
+      height: 350px;
+    }
+    main{
+      width:97%
+    }
+  
+   
+  }
+  @media (max-width: 400px) {
+    .iframevideo{
+      border-radius: 15px;
+      width: 371px;
+      /* margin-inline: -19px; */
+      height: 236px;
+      border-radius: 0;
+    }
+  
+    .right img {
+      display: block;
+      width: 30px; 
+    }
+    main{
+      width:97%
+    }
+    .nav_search_btn{
+      width: 18%;
+    }
+    .navbar{
+      width: fit-content;
+    }
+    .channelnameSubscribe{
+      display: flex;
+      justify-content: space-between;
+      padding-inline: 3px;
+      width: min-content;
+      gap: 6px;
+    }
+  .channel-icon
+  {
+      margin-right: 0;
+  }
+  .subscribe{
+      width: 100px;
+  }
+  
+  .border-line{
+      width:95%;
+  }
+  
+  }
+  
