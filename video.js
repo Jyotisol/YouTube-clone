@@ -10,15 +10,15 @@ window.addEventListener("load", () => {
 
   const videoId = params.get("videoId");
   //      or we can get the videoid using localStorage.getItem
-
+     let player;
   if (YT) {
-    new YT.Player("video-container", {
+  player =  new YT.Player("video-container", {
       height: "420",
       width: "770",
       videoId: videoId,
     });
   }
-
+ 
   function getRelatedContent(channelTitle) {
     let url;
     url = `${BASE_URL}/search?key=${API_KEY}&q=${channelTitle}&type=video&part=snippet&maxResults=1`;

@@ -132,3 +132,16 @@ document.addEventListener("DOMContentLoaded", () => {
 setTimeout(() => {
   getVideos("");
 }, 700);
+
+
+  
+function myfunction(){
+  let btn = document.body;
+  if(btn.style.backgroundColor === 'black'){
+    btn.style.backgroundColor = 'white';
+    btn.style.color = 'black'
+  }else{
+    btn.style.backgroundColor = 'black'
+    btn.style.color = 'white'
+  }
+}
